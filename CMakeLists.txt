@@ -39,7 +39,7 @@ FetchContent_Declare(
 	GIT_REPOSITORY	https://github.com/g-truc/glm.git
 	GIT_TAG 	0af55ccecd98d4e5a8d1fad7de25ba429d60e863
 )
-FetchContent_Declare(glslang GIT_REPOSITORY https://github.com/KhronosGroup/glslang.git GIT_TAG vulkan-sdk-1.4.335)
+FetchContent_Declare(glslang GIT_REPOSITORY https://github.com/KhronosGroup/glslang.git GIT_TAG vulkan-sdk-1.4.335.0)
 FetchContent_MakeAvailable(glm glslang)
 
 target_link_libraries(${PROJECT_NAME} glm::glm glslang::glslang)
